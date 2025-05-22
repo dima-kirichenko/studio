@@ -25,6 +25,7 @@ import { MAINTENANCE_CATEGORIES_RAW, getMaintenanceCategoryByKey } from '@/const
 import type { MaintenanceCategory } from '@/lib/types';
 import { useToast } from '@/hooks/use-toast';
 import Image from 'next/image';
+import { Label } from '@/components/ui/label'; // Added import
 
 const formSchema = z.object({
   title: z.string().min(5, { message: 'Title must be at least 5 characters.' }).max(100),
