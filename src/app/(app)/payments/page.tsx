@@ -14,7 +14,7 @@ const savedPaymentMethods = [
 const paymentHistory = [
   { id: "1", date: "2024-07-01", description: "Rent - July 2024", amount: 850.00, status: "Paid" },
   { id: "2", date: "2024-06-01", description: "Rent - June 2024", amount: 850.00, status: "Paid" },
-  { id: "3", date: "2024-05-01", description: "Late Fee - April Rent", amount: 25.00, status: "Paid" },
+  { id: "3", date: "2024-05-01", description: "Late Fee - April Rent", amount: 25.00, status: "Open" },
 ];
 
 export default function PaymentsPage() {
