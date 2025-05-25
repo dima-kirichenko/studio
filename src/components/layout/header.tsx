@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Building2 } from 'lucide-react'; // Or any other suitable app icon
 import { APP_NAME } from '@/constants';
+import { DesktopNavigation } from './desktop-navigation';
 
 type HeaderProps = {
   title: string;
@@ -12,9 +13,14 @@ export function Header({ title }: HeaderProps) {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/dashboard" className="flex items-center gap-2 text-lg font-semibold text-primary">
           <Building2 className="h-6 w-6" />
-          <span>{APP_NAME}</span>
+          <span className="hidden sm:inline">{APP_NAME}</span>
         </Link>
-        <h1 className="text-xl font-medium text-foreground">{title}</h1>
+        
+        <DesktopNavigation />
+        
+        {/* Mobile page title - only show on mobile when desktop nav is hidden */}
+        <h1 className="text-xl font-medium text-foreground md:hidden">{title}</h1>
+        
         {/* Placeholder for profile/settings icon if needed */}
         <div className="w-10 h-10"></div> 
       </div>

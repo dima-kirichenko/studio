@@ -1,4 +1,5 @@
 import type { NavItem, MaintenanceCategory } from '@/lib/types';
+import type { LucideIcon } from 'lucide-react';
 import { LayoutDashboard, CreditCard, Wrench, FileText, User, Droplet, Zap, Bug, HardHat, MoreHorizontal, ShieldQuestion } from 'lucide-react';
 
 export const APP_NAME = "TenantConnect";

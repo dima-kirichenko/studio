@@ -11,7 +11,8 @@ export function AppShell({ children, pageTitle }: AppShellProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <Header title={pageTitle} />
-      <main className="flex-1 container py-6 pb-24 md:pb-6"> {/* Add padding bottom for bottom nav */}
+      {/* Mobile: padding bottom for bottom nav, Desktop: normal padding */}
+      <main className="flex-1 container py-6 pb-24 md:pb-6"> 
         {children}
       </main>
       <BottomNavigation />
