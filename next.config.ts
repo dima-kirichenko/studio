@@ -18,6 +18,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    serverActions: {
+      allowedOrigins: [
+        'localhost:9002',
+        'humble-couscous-rp456wj9r6pcpvvx-9002.app.github.dev'
+      ]
+    }
+  }
 };
 
 export default nextConfig;
